@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palremate Online</title>
     <link rel="stylesheet" href="../style/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <!--Font Awesome-->
     <link
       rel="stylesheet"
@@ -23,94 +30,168 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <!--barra de navegacion-->
-        <nav>
-          <ul class="fijaBar">
-            <li><h1>Palremate Online</h1></li>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="remates.html">Remates</a></li>
-            <li><a href="ventadirecta.html">Venta Directa</a></li>
-            <li>
-              <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-            </li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li>
-              <input
-                id="topnav"
-                type="text"
-                placeholder="Buscar por nombre o lote"
-              />
-            </li>
-            <li>
-              <button class="btn4">
-                <img src="../img/magnifying-glass-solid.svg" width="25px" />
-              </button>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-user"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-gavel"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-heart"></i></a>
-            </li>
-          </ul>
-        </nav>
+    <div class="fixed-top">
+      <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Hoy finaliza Pinacoteca!</p>
       </header>
-    </div>
-    <main style="margin: 15px">
-      <section class="contactRes">
-        <div class="container">
-          <!--aqui comienza el formulario-->
-          <h2
-            style="margin-top: 80px; text-align: center; color: rgb(73, 73, 73)"
+      <!--barra de navegacion-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Palremate Online</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            Contacto
-          </h2>
-          <h3
-            style="text-align: center; margin-top: 60px; color: rgb(73, 73, 73)"
-          >
-            Comunicate con nosotros
-          </h3>
-          <div id="contactDiv">
-            <a
-              href="https://www.google.com/maps/place/Yaguar%C3%B3n+y+Mercedes/@-34.9039151,-56.186467,16.75z/data=!4m5!3m4!1s0x959f80333fde5f61:0xe000c495b6123c60!8m2!3d-34.90359!4d-56.18828?hl=es-419"
-            >
-              <img id="contactMap" src="../img/maps.jpg" />
-            </a>
-            <div id="contactForm">
-              <h2>Nombre</h2>
-              <input id="nameInput" class="formInput" />
-              <h2>E-Mail</h2>
-              <input id="emailInput" class="formInput" />
-              <h2>Asunto</h2>
-              <input id="matterInput" class="formInput" />
-              <h2>Mensaje</h2>
-              <textarea id="messageInput" class="formInput"></textarea>
-              <div id="btnSend" class="">Enviar</div>
-            </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/remates.html">Remates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/ventadirecta.html"
+                  >Venta Directa</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="../pages/preguntasfrecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
+        </div>
+      </nav>
+    </div>
+    <main style="margin-top: 130px">
+      <section
+        id="seccion-contacto"
+        class="border-bottom border-secondary border-2 fs-1 g-md-5"
+      >
+        <div id="bg-contacto"></div>
+
+        <div class="container mb-sm-5" id="contenedor-formulario">
+          <div id="titulo-formulario" class="text-center mb-sm-5">
+            <h2 class="fs-1">Contacto</h2>
+          </div>
+
+          <form action="">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="nombre@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Adrian Sanchez"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="tel"
+                placeholder="00-000-000"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Escribe tu mensaje"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <button type="button" class="btn btn-primary w-100 fs-5">
+                Enviar Mensaje
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
+    <div class="container-fluid bg-primary">
+      <footer class="text-center text-lg-start">
+        <div class="container d-flex justify-content-center py-5">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+            style="background-color: #54456b"
+          >
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+            style="background-color: #54456b"
+          >
+            <i class="fab fa-youtube fa-2x"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+            style="background-color: #8f869c"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+          >
+            <i class="fab fa-twitter bg-primary fa-2x"></i>
+          </button>
+        </div>
 
-    <div class="container">
-      <footer>
-        <h3>Buscanos en las redes</h3>
-        <a href="#"
-          ><i class="fab fa-instagram-square fa-3x" style="color: white"></i
-        ></a>
-        <a href="#"
-          ><i class="fab fa-facebook fa-3x" style="color: white"></i
-        ></a>
-        <a href="#"
-          ><i class="fab fa-twitter-square fa-3x" style="color: white"></i
-        ></a>
-        <h3>Copyright 2021 Palremate Online</h3>
+        <!-- Copyright -->
+        <div class="text-center text-white p-3">
+          © 2022 Copyright:
+          <a class="text-white" href="">Palremateonline.com</a>
+        </div>
+        <!-- Copyright -->
       </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

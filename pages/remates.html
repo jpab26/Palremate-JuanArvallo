@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palremate Online</title>
     <link rel="stylesheet" href="../style/styles.css" />
+
     <!--Font Awesome-->
     <link
       rel="stylesheet"
@@ -21,68 +22,92 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <!--barra de navegacion-->
-        <nav>
-          <ul class="fijaBar">
-            <li><h1>Palremate Online</h1></li>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="remates.html">Remates</a></li>
-            <li><a href="ventadirecta.html">Venta Directa</a></li>
-            <li>
-              <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-            </li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li>
-              <input
-                id="topnav"
-                type="text"
-                placeholder="Buscar por nombre o lote"
-              />
-            </li>
-            <li>
-              <button class="btn4">
-                <img src="../img/magnifying-glass-solid.svg" width="25px" />
-              </button>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-user"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-gavel"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-heart"></i></a>
-            </li>
-          </ul>
-        </nav>
+    <div class="fixed-top">
+      <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Hoy finaliza Pinacoteca!</p>
       </header>
+      <!--barra de navegacion-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Palremate Online</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/remates.html">Remates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/ventadirecta.html"
+                  >Venta Directa</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="../pages/preguntasfrecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </div>
-    <main style="margin: 15px">
+    <main style="margin-top:140px;">
       <section>
         <div class="container">
           <!--para hacer un tabla con datos-->
           <img
-            class="imageRemates"
+            class="img-fluid"
             src="../img/pexels-tima-miroshnichenko-6827327.jpg"
             alt="imageRemates"
           />
-          <div class="texto-encima4">
-            <br />Muebles <br />
-            26 al 30 de Enero a partir de las 21hs
           </div>
 
           <h2
-            style="margin-top: 40px; margin-left: 255px; color: rgb(73, 73, 73)"
+            style="margin-top: 40px; text-align: center; color: rgb(73, 73, 73)"
           >
             Información sobre el remate :
           </h2>
-          <ul class="a">
-            <li>
-              - Remate en dólares
+              <br> - Remate en dólares
               <br />
               - Comisión 10,08% i.v.a incluido que debes sumarlo a tu oferta que
               resulte ganadora
@@ -95,10 +120,6 @@
               - Retiro dentro de los 2 días hábiles, se cobrará depósito en caso
               de no retirar. El pago de todos los lotes es en Paraná 2245 de 9 a
               18 hs. Y sábado de 9 a 12.
-            </li>
-          </ul>
-          <ul class="b">
-            <li>
               <br />
               - Luego de finalizado el remate se comunica por WhatsApp al
               090123545 en el caso de que desee realizar una transferencia.
@@ -107,44 +128,55 @@
               - Le recordamos que debe de cumpir con los plazos. Su oferta es un
               compromiso. <br />
               - Por favor lea las preguntas frecuentes para evitar futuras
-              complicaciones.
-            </li>
-          </ul>
+              complicaciones.     
         </div>
-      </section>
-      <section class="gallery">
-        <img src="../img/kelly-miller-BL6XQLZeXpg-unsplash.jpg" alt="kelly" />
-        <img src="../img/lina-castaneda-9EwEvMVdCwQ-unsplash.jpg" alt="lina" />
-        <img src="../img/anis-rahman-L_Z4t_hwDRQ-unsplash.jpg" alt="anis" />
-        <img src="../img/kiwihug-7zIbXLchXHA-unsplash.jpg" alt="kiwi" />
-        <img src="../img/pexels-julia-volk-6397610.jpg" alt="julia" />
-        <img src="../img/pexels-cottonbro-4974550.jpg" alt="cotto" />
-        <img
-          src="../img/gaelle-marcel-BLWiyvR2feY-unsplash.jpg"
-          alt="marcel"
-          height="678px"
-        />
-        <img
-          src="../img/charles-lamb-86V-OjUiEoY-unsplash.jpg"
-          alt="social"
-          height="678px"
-        />
-      </section>
+      </section>  
     </main>
-    <div class="container">
-      <footer>
-        <h3>Buscanos en las redes</h3>
-        <a href="#"
-          ><i class="fab fa-instagram-square fa-3x" style="color: white"></i
-        ></a>
-        <a href="#"
-          ><i class="fab fa-facebook fa-3x" style="color: white"></i
-        ></a>
-        <a href="#"
-          ><i class="fab fa-twitter-square fa-3x" style="color: white"></i
-        ></a>
-        <h3>Copyright 2021 Palremate Online</h3>
+    <div class="container-fluid bg-primary">
+      <footer class="text-center text-lg-start">
+        <div class="container d-flex justify-content-center py-5">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+            style="background-color: #54456b"
+          >
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+            style="background-color: #54456b"
+          >
+            <i class="fab fa-youtube fa-2x"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+            style="background-color: #8f869c"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg btn-floating mx-2 bg-primary"
+          >
+            <i class="fab fa-twitter bg-primary fa-2x"></i>
+          </button>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3">
+          © 2022 Copyright:
+          <a class="text-white" href="">Palremateonline.com</a>
+        </div>
+        <!-- Copyright -->
       </footer>
     </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
