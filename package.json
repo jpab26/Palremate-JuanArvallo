@@ -1,0 +1,20 @@
+{
+  "name": "palremate-proyecto3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch estilos/style.scss/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpab26/Palremate-JuanArvallo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpab26/Palremate-JuanArvallo/issues"
+  },
+  "homepage": "https://github.com/jpab26/Palremate-JuanArvallo#readme"
+}
